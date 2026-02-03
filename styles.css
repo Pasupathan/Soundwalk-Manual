@@ -513,21 +513,43 @@ p {
 
 /* Mobile Responsive Styles */
 @media screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
     .sidebar {
         width: 100%;
         height: auto;
-        position: relative;
+        position: static;
         box-shadow: none;
+        overflow-y: visible;
+        display: block !important;
+    }
+    
+    .sidebar .logo {
+        padding: 20px 15px;
+    }
+    
+    .nav-menu {
+        padding: 10px 0;
+        display: block !important;
+    }
+    
+    .nav-link {
+        padding: 12px 20px;
+        font-size: 15px;
     }
     
     .content {
         margin-left: 0;
         width: 100%;
         padding: 20px 15px;
+        position: relative;
     }
     
     .section {
-        padding: 20px 15px;
+        padding: 15px 10px;
     }
     
     .workflow-steps {
@@ -537,11 +559,12 @@ p {
     
     .workflow-step {
         margin: 10px 0;
+        width: 90%;
     }
     
     .arrow {
         transform: rotate(90deg);
-        margin: 0;
+        margin: 5px 0;
     }
     
     .key-features {
@@ -554,7 +577,9 @@ p {
     }
     
     table {
-        font-size: 12px;
+        font-size: 11px;
+        display: block;
+        overflow-x: auto;
     }
     
     .code-container pre {
@@ -563,15 +588,15 @@ p {
     }
     
     h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
     
     h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
