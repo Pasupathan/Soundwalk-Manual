@@ -562,6 +562,82 @@ p {
     background: var(--accent-color);
 }
 
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+    
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px 15px;
+    }
+    
+    .section {
+        padding: 20px 15px;
+    }
+    
+    .workflow-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .workflow-step {
+        margin: 10px 0;
+    }
+    
+    .arrow {
+        transform: rotate(90deg);
+        margin: 0;
+    }
+    
+    .key-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .criteria-grid,
+    .equipment-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    table {
+        font-size: 12px;
+    }
+    
+    .code-container pre {
+        font-size: 11px;
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .sidebar {
+        width: 220px;
+    }
+    
+    .content {
+        margin-left: 220px;
+        width: calc(100% - 220px);
+    }
+}
+
 /* Print Styles */
 @media print {
     .sidebar {
