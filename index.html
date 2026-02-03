@@ -319,8 +319,8 @@
                 <ul>
                     <li><strong>location_id</strong> - Location identifier (L1, L2, L3, etc.)</li>
                     <li><strong>timestamp</strong> - Date and time of response</li>
-                    <li><strong>paq_pleasant, paq_chaotic, paq_vibrant, paq_uneventful, paq_calm, paq_annoying, paq_eventful, paq_monotonous</strong> - 8 PAQ attributes (1-5 scale)</li>
                     <li><strong>source_traffic, source_other_noise, source_human, source_natural</strong> - 4 sound sources (1-5 scale)</li>
+                    <li><strong>paq_pleasant, paq_chaotic, paq_vibrant, paq_uneventful, paq_calm, paq_annoying, paq_eventful, paq_monotonous</strong> - 8 PAQ attributes (1-5 scale)</li>
                     <li><strong>overall_quality</strong> - Overall soundscape quality (1-5 scale)</li>
                     <li><strong>appropriateness</strong> - Appropriateness to place (1-5 scale)</li>
                     <li><strong>sound_standout, sound_negative, sound_positive</strong> - Any Open-ended text responses (optional)</li>
@@ -341,16 +341,16 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1. PAQ Attributes</td>
+                            <td>1. Sound Sources</td>
+                            <td>4 main categories (traffic, other noise, human, natural)</td>
+                            <td>1-5 (Not at all -> Dominates completely)</td>
+                            <td>ISO 12913-2 Figure C.2</td>                            
+                        </tr>
+                        <tr>
+                            <td>2. PAQ Attributes</td>
                             <td>8 attributes (pleasant, chaotic, vibrant, uneventful, calm, annoying, eventful, monotonous)</td>
                             <td>1-5 (Strongly disagree -> Strongly agree)</td>
                             <td>ISO 12913-2 Figure C.4</td>
-                        </tr>
-                        <tr>
-                            <td>2. Sound Sources</td>
-                            <td>4 main categories (traffic, other noise, human, natural)</td>
-                            <td>1-5 (Not at all -> Dominates completely)</td>
-                            <td>ISO 12913-2 Figure C.2</td>
                         </tr>
                         <tr>
                             <td>3. Overall Quality</td>
@@ -1665,4 +1665,5 @@ if __name__ == "__main__":
 
     <script src="script.js"></script>
 </body>
+
 </html>
